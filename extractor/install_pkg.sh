@@ -17,7 +17,12 @@ if [ "$addonsDir" == "PATH_TO_ADDONS_DIR" ]; then
 	exit
 fi
 
-`dirname $0`/depkg.AppImage "$1" --check-type
+extractor=`dirname $0`/depkg
+if [ ! -x "$extractor" ]; then
+	extractor=`dirname $0`/depkg.AppImage
+fi
+
+"$extractor" "$1" --check-type
 
 ret="$?"
 
@@ -33,7 +38,7 @@ else
 		gamesDir=$addonsDir
 	fi
 	
-	`dirname $0`/depkg.AppImage "$1" $gamesDir
+	"$extractor" "$1" $gamesDir
 fi
 
 echo "Press [enter] to close"

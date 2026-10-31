@@ -1,4 +1,4 @@
-1. depkg.AppImage
+1. depkg or depkg.AppImage
 	
 	Can be called in command line.
 	The first argument is the path to the pkg file to extract.
