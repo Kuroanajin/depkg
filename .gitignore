@@ -1,0 +1,10 @@
+extractor/build/*
+!extractor/build/buildall
+!extractor/build/cryptobuild
+!extractor/build/lbuild
+!extractor/build/lconf
+!extractor/build/lpack
+!extractor/build/lrun
+!extractor/build/wpack
+*.pkg
+*.AppImage

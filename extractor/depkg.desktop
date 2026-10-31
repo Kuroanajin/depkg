@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=depkg
+Exec=depkg
+Terminal=true
+Type=Application
+Icon=icon
+Comment=PKG extractor
+Categories=Game;Emulator;
+StartupWMClass=depkg;
+

@@ -1,0 +1,8 @@
+mkdir -p ./depkg-VERSION-windows
+cp /clang64/bin/zlib1.dll ./depkg-VERSION-windows/
+cp /clang64/bin/libc++.dll ./depkg-VERSION-windows/
+cp ./depkg.exe ./depkg-VERSION-windows/
+strip -s ./depkg-VERSION-windows/*
+cp ../install_pkg.bat ./depkg-VERSION-windows/
+cp ../batch_install.bat ./depkg-VERSION-windows/
+cp ../readme_windows.txt ./depkg-VERSION-windows/
